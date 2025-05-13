@@ -1,0 +1,31 @@
+// Use gradle 3.3
+
+buildscript {
+	repositories {
+          maven {
+          url 'https://maven.google.com/'
+          name 'Google'
+       }
+        jcenter()	
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:2.3.3'
+	}
+}
+
+allprojects {
+	group = 'com.physicaloid_ai'
+	version = '1.5'
+
+	repositories {
+       maven {
+          url 'https://maven.google.com/'
+          name 'Google'
+       }
+        jcenter()
+		mavenCentral()
+	}
+
+}
